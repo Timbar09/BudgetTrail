@@ -14,7 +14,10 @@
 
   <body>
     <div class="app">
-      <%= yield %>
-    </div>
+      <%= render "shared/flashes" %>
+      <main class="main">
+        <%= yield %>
+      </main>
+    </main>
   </body>
 </html>
