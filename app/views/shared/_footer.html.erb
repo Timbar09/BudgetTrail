@@ -1,18 +1,20 @@
 <footer class='footer'>
   <% if user_signed_in? %>
+  <div class='footer_actions'>
     <% if current_page?(categories_path) %>
       <button>New Category</button>
+    <% elsif current_page?(transactions_path) %>
+      <button>New Transaction</button>
     <% end %>
-
-    <button>New Transaction</button>
+  </div>
+  <% else %>
+    <ul class='splash_links'>
+      <li>
+        <%= link_to "Sign in", new_user_session_path %>
+      </li>
+      <li>
+        <%= link_to "Sign up", new_user_registration_path %>
+      </li>
+    </ul>
   <% end %>
-
-  <ul class='splash_links'>
-    <li>
-      <%= link_to "Sign in", new_user_session_path %>
-    </li>
-    <li>
-      <%= link_to "Sign up", new_user_registration_path %>
-    </li>
-  </ul>
 </footer>
