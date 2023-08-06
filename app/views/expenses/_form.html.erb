@@ -1,0 +1,20 @@
+<%# Create new expense form partial: %>
+<%= form_with model: [@category, @expense], local: true, class: 'form' do |form| %>
+  <div class="field">
+    <%= form.text_field :name, autofocus: true, placeholder: 'Name' %>
+  </div>
+
+  <div class="field">
+    <%= form.number_field :amount, step: 0.01, placeholder: 'Amount' %>
+  </div>
+
+  <fieldset class="field">
+    <legend>Select at least one category:</legend>
+
+    <%= form.collection_check_boxes :category_ids, Category.all, :id, :name %>
+  </fieldset>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
