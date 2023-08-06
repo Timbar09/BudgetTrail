@@ -2,12 +2,12 @@
   <% if user_signed_in? %>
   <div class='footer_actions'>
     <% if current_page?(categories_path) %>
-      <button>New Category</button>
-    <% elsif current_page?(transactions_path) %>
+      <%= link_to 'New Category', new_category_path, class: 'button button__new' %>
+    <% else %>
       <button>New Transaction</button>
     <% end %>
   </div>
-  <% else %>
+  <% elsif current_page?(splash_path) %>
     <ul class='splash_links'>
       <li>
         <%= link_to "Sign in", new_user_session_path %>
