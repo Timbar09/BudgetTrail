@@ -1,2 +1,5 @@
-<h1>Expenses#index</h1>
-<p>Find me in app/views/expenses/index.html.erb</p>
+<ul class='expense_list'>
+  <% @expenses.each do |expense| %>
+    <%= render 'expense_card', expense: expense %>
+  <% end %>
+</ul>
