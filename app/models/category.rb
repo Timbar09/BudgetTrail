@@ -7,7 +7,7 @@ class Category < ApplicationRecord
 
   has_one_attached :icon
 
-  def total_transactions
+  def total_expenses
     expenses.sum(:amount)
   end
 end
