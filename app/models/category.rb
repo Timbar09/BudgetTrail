@@ -5,6 +5,8 @@ class Category < ApplicationRecord
 
   validates :name, presence: true, length: { minimum: 1, maximum: 25 }
 
+  has_one_attached :icon
+
   def total_transactions
     expenses.sum(:amount)
   end
