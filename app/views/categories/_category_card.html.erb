@@ -7,7 +7,7 @@
       <div class='category_card_text'>
         <div class='rigt'>
           <span class='category_name'><%= category.name %></span>
-          <span class='category_total'><%= number_to_currency(category.total_transactions) %></span>
+          <span class='category_total'><%= number_to_currency(category.total_expenses) %></span>
         </div>
 
         <span class='category_date'><%= category.created_at.strftime('%b %d, %Y') %></span>

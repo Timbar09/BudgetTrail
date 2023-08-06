@@ -13,9 +13,9 @@ class ExpensesController < ApplicationController
   end
 
   def create
-    category_ids = expense_params[:category_ids]
+    category_ids = expense_params[:category_ids].reject(&:empty?)
 
-    if category_ids.nil || category_ids.empty?
+    if category_ids.nil? || category_ids.empty?
       render :new, alert: 'Please select at least one category.'
       return
     end
@@ -38,8 +38,7 @@ class ExpensesController < ApplicationController
     @category = current_user.categories.find(params[:category_id])
   end
     
-
   def expense_params
-    params.require(:expense).permit(:name, :amount, :category_ids: [])
+    params.require(:expense).permit(:name, :amount, category_ids: [])
   end
 end
