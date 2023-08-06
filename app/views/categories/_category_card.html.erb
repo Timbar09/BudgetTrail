@@ -1,0 +1,16 @@
+<li>
+  <%= link_to category_expenses_path(category), class: 'category_card' do %>
+      <div class='category_card_icon'>
+        <%= image_tag category.icon, width: 50, height: 50 %>
+      </div>
+
+      <div class='category_card_text'>
+        <div class='rigt'>
+          <span class='category_name'><%= category.name %></span>
+          <span class='category_total'><%= number_to_currency(category.total_transactions) %></span>
+        </div>
+
+        <span class='category_date'><%= category.created_at.strftime('%b %d, %Y') %></span>
+      </div>
+  <% end %>
+</li>
