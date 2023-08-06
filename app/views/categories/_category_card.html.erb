@@ -1,7 +1,7 @@
 <li>
   <%= link_to category_expenses_path(category), class: 'category_card' do %>
       <div class='category_card_icon'>
-        <%= image_tag category.icon, width: 50, height: 50 %>
+        <%= image_tag icon_fallback(category.icon), class: 'category_icon', width: 50, height: 50 %>
       </div>
 
       <div class='category_card_text'>
