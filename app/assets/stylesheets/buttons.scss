@@ -1,0 +1,39 @@
+.btn {
+  display: inline-block;
+  border-radius: 0.25rem;
+  color: var(--very-light-grey);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: translate 125ms ease-in-out, box-shadow 125ms ease-in-out,
+    background-color 125ms ease-in-out;
+
+  &_primary {
+    padding: 1rem 1rem;
+    width: 100%;
+    background-color: var(--blue);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      translate: 0 -0.25rem;
+      box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+      translate: 0 0;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+      background-color: rgb(35, 85, 141);
+    }
+  }
+
+  &_tertiary {
+    color: var(--dark-grey);
+
+    &:hover {
+      color: var(--blue);
+      text-decoration: underline;
+    }
+  }
+}

@@ -33,31 +33,11 @@ body {
   min-width: 320px;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0;
-  color: var(--very-dark);
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .app {
   position: relative;
-  padding: 0 0.5rem;
   background-color: var(--very-light-grey);
   min-height: 100vh;
   max-width: 30em;
-  margin: 0 auto;
   text-align: center;
   border-left: solid 1px var(--light-grey);
   border-right: solid 1px var(--light-grey);
