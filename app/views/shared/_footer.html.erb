@@ -2,12 +2,12 @@
   <% if user_signed_in? %>
   <div class='footer_actions'>
     <% if current_page?(categories_path) %>
-      <%= link_to 'New Category', new_category_path, class: 'button button__new' %>
+      <%= link_to 'New Category', new_category_path, class: 'button button_new' %>
     <% else %>
-      <%= link_to 'New Expense', new_category_expense_path(@category), class: 'button button__new' %>
+      <%= link_to 'New Transaction', new_category_expense_path(@category), class: 'button button_new' %>
     <% end %>
   </div>
-  <% elsif current_page?(splash_path) %>
+  <% elsif current_page?(root_path) %>
     <ul class='splash_links'>
       <li>
         <%= link_to "Sign in", new_user_session_path %>
