@@ -1,4 +1,3 @@
-<%# Create new expense form partial: %>
 <%= form_with model: [@category, @expense], local: true, class: 'form' do |form| %>
   <div class="field">
     <%= form.text_field :name, autofocus: true, placeholder: 'Name' %>
@@ -15,6 +14,6 @@
   </fieldset>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit 'Save', class: 'button button_save' %>
   </div>
 <% end %>
