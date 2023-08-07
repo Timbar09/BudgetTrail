@@ -1,0 +1,9 @@
+<%= render 'shared/page_header', title: @category.name, total: number_to_currency(@category.total_expenses) %>
+
+<ul class='expense_list'>
+  <% @expenses.each do |expense| %>
+    <%= render 'expense_card', expense: expense %>
+  <% end %>
+</ul>
+
+<%= render 'shared/actions', path: new_category_expense_path(@category) %>

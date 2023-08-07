@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Rubik:wght@300;400;500&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --red: rgb(194, 31, 31);
+  --light-red: rgba(197, 43, 43, 0.671);
+  --green: rgb(15, 176, 50);
+  --black: rgb(0, 0, 0);
+  --very-dark: rgb(15, 15, 15);
+  --dark: rgb(30, 30, 30);
+  --dark-grey: rgb(101, 101, 101);
+  --mid-grey: rgb(182, 182, 182);
+  --grey: rgb(207, 207, 207);
+  --light-grey: rgb(231, 231, 231);
+  --very-light-grey: rgb(250, 250, 250);
+  --white: rgb(255, 255, 255);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', 'Roboto', sans-serif;
+  background-color: var(--white);
+  color: var(--dark-grey);
+  min-width: 320px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: var(--very-dark);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  position: relative;
+  padding: 0 0.5rem;
+  background-color: var(--very-light-grey);
+  min-height: 100vh;
+  max-width: 30em;
+  margin: 0 auto;
+  text-align: center;
+  border-left: solid 1px var(--light-grey);
+  border-right: solid 1px var(--light-grey);
+}

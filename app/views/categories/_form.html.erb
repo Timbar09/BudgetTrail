@@ -1,0 +1,13 @@
+<%= form_with model: @category, local: true, class: 'form' do |form| %>
+  <div class="field">
+    <%= form.file_field :icon %>
+  </div>
+  
+  <div class="field">
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Save', class: 'button button_save' %>
+  </div>
+<% end %>

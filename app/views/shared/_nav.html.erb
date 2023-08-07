@@ -1,0 +1,31 @@
+<% if !current_page?(root_path) %>
+  <nav class='nav'>
+    <ul class='nav_links'>
+      <li class='nav_link'>
+        <% if current_page?(categories_path) %>
+          <%= link_to destroy_user_session_path, data: { turbo_confirm: 'Are you sure?', turbo_method: :delete } do %>
+            <i class="material-icons">menu</i>
+          <% end %>
+        <% elsif current_page?(new_user_session_path) %>
+          <%= link_to root_path do %>
+            <i class="material-icons">west</i>
+          <% end %>
+        <% else %>
+          <%= link_to categories_path do %>
+            <i class="material-icons">west</i>
+          <% end %>
+        <% end %>
+      </li>
+
+      <li>
+        <%= current_page_title %>
+      </li>
+
+      <li class='nav_link'>
+        <%= link_to '#' do %>
+          <i class="material-icons">search</i>
+        <% end %>
+      </li>
+    </ul>
+  </nav>
+<% end %>
