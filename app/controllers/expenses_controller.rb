@@ -2,8 +2,6 @@ class ExpensesController < ApplicationController
   before_action :set_category, only: [:index, :new, :create]
 
   def index
-    @category = current_user.categories.find(params[:category_id])
-
     @expenses = @category.expenses
   end
 

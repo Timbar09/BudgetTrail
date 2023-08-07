@@ -1,6 +1,8 @@
 class CategoriesController < ApplicationController
   def index
     @categories = current_user.categories.includes(:expenses)
+
+    @grand_total = @categories.map(&:total_expenses).sum
   end
 
   def new
