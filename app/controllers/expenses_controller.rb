@@ -1,5 +1,5 @@
 class ExpensesController < ApplicationController
-  before_action :set_category, only: [:index, :new, :create]
+  before_action :set_category, only: %i[index new create]
 
   def index
     @expenses = @category.expenses
@@ -35,7 +35,7 @@ class ExpensesController < ApplicationController
   def set_category
     @category = current_user.categories.find(params[:category_id])
   end
-    
+
   def expense_params
     params.require(:expense).permit(:name, :amount, category_ids: [])
   end
