@@ -1,0 +1,7 @@
+<div class='footer_actions'>
+  <% if current_page?(categories_path) %>
+    <%= link_to 'New Category', path, class: 'button button_new' %>
+  <% else %>
+    <%= link_to 'New Transaction', path, class: 'button button_new' %>
+  <% end %>
+</div>
