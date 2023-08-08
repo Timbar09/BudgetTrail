@@ -1,6 +1,6 @@
 class CategoriesController < ApplicationController
   def index
-    @categories = current_user.categories.includes(:expenses)
+    @categories = current_user.categories.includes(:expenses).order(created_at: :desc)
 
     @grand_total = @categories.map(&:total_expenses).sum
   end

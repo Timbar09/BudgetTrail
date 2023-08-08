@@ -8,8 +8,11 @@
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  transition: translate 125ms ease-in-out, box-shadow 125ms ease-in-out,
-    background-color 125ms ease-in-out;
+  transition:
+    translate 125ms ease-in-out,
+    box-shadow 125ms ease-in-out,
+    background-color 125ms ease-in-out,
+    color 125ms ease-in-out;
 
   &_primary {
     padding: 1rem 1rem;
@@ -37,12 +40,14 @@
     &:hover {
       translate: 0 -0.25rem;
       box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+      color: var(--green);
+      background-color: var(--very-light-grey);
     }
 
     &:active {
       translate: 0 0;
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-      background-color: rgb(51, 95, 19);
+      background-color: var(--light-grey);
     }
   }
 
