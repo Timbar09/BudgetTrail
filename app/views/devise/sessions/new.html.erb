@@ -1,5 +1,5 @@
 <div class='devise'>
-  <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'form' }) do |f| %>
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'form mb-2' }) do |f| %>
     <div class="field">
       <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: 'input' %>
     </div>
