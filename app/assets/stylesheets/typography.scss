@@ -19,6 +19,15 @@ ul {
 .flash {
   p {
     margin: 0;
+    font-size: 0.8rem;
+  }
+
+  &_notice {
+    color: #00c851;
+  }
+
+  &_alert {
+    color: #ff4444;
   }
 }
 

@@ -26,6 +26,20 @@
     }
   }
 
+  &t {
+    &-1 {
+      padding-top: 0.5rem;
+    }
+
+    &-2 {
+      padding-top: 1rem;
+    }
+
+    &-3 {
+      padding-top: 1.5rem;
+    }
+  }
+
   &r {
     &-1 {
       padding-right: 0.5rem;
@@ -37,6 +51,20 @@
 
     &-3 {
       padding-right: 1.5rem;
+    }
+  }
+
+  &b {
+    &-1 {
+      padding-bottom: 0.5rem;
+    }
+
+    &-2 {
+      padding-bottom: 1rem;
+    }
+
+    &-3 {
+      padding-bottom: 1.5rem;
     }
   }
 
