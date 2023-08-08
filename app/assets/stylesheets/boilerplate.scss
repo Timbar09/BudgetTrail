@@ -41,3 +41,7 @@ body {
   border-left: solid 1px var(--light-grey);
   border-right: solid 1px var(--light-grey);
 }
+
+.no_hover {
+  pointer-events: none;
+}

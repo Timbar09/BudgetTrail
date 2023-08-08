@@ -1,6 +1,6 @@
 <%= render 'shared/page_header', title: 'Categories', total: number_to_currency(@grand_total) %>
 
-<ul class='category_list p-2'>
+<ul class='card_list p-2'>
   <% if @categories.empty? %>
     <li class='empty_text'>You don't have any categories yet.</li>
   <% end %>
