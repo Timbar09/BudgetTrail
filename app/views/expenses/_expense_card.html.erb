@@ -1,8 +1,8 @@
-<li class='expense_card'>
-  <div class='right'>
-    <span class='expense_name'><%= expense.name %></span>
-    <span class='expense_amount'><%= number_to_currency(expense.amount) %></span>
+<li class='card p-2 mb-2 no_hover'>
+  <div class='top flex flex-jc-sb flex-ai-c'>
+    <span class='card_name'><%= expense.name %></span>
+    <span class='card_total'><%= number_to_currency(expense.amount) %></span>
   </div>
 
-  <span class='expense_date'><%= expense.created_at.strftime('%b %d, %Y') %></span>
+  <span class='card_date'><%= expense.created_at.strftime('%b %d, %Y') %></span>
 </li>

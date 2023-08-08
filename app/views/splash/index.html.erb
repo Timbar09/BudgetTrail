@@ -1,11 +1,11 @@
 <div class="splash">
   <h1 class="splash_title">BudgetTrail</h1>
-  <ul class='splash_links'>
+  <ul class='splash_links flex flex-column px-2 py-3'>
     <li>
-      <%= link_to "Sign in", new_user_session_path %>
+      <%= link_to "Sign in", new_user_session_path, class: 'btn btn_primary' %>
     </li>
     <li>
-      <%= link_to "Sign up", new_user_registration_path %>
+      <%= link_to "Sign up", new_user_registration_path, class: 'btn btn_tertiary' %>
     </li>
   </ul>
 </div>

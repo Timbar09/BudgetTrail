@@ -1,30 +1,25 @@
 <div class='devise'>
-  <h2>Sign up</h2>
-
-  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: 'form mb-1' }) do |f| %>
     <%= render "devise/shared/error_messages", resource: resource %>
 
     <div class="field">
-      <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Full Name" %>
+      <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Full Name", class: 'input' %>
     </div>
 
     <div class="field">
-      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email" %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: 'input' %>
     </div>
 
     <div class="field">
-      <% if @minimum_password_length %>
-      <em>(<%= @minimum_password_length %> characters minimum)</em>
-      <% end %><br />
-      <%= f.password_field :password, autocomplete: "new-password", placeholder: "Password" %>
+      <%= f.password_field :password, autocomplete: "new-password", placeholder: "Password #{' (minimum 6 characters)' if @minimum_password_length}", class: 'input' %>
     </div>
 
     <div class="field">
-      <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Confirm Password" %>
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Confirm Password", class: 'input' %>
     </div>
 
-    <div class="actions">
-      <%= f.submit "Sign up" %>
+    <div class="actions p-2">
+      <%= f.submit "Sign up", class: 'btn btn_primary' %>
     </div>
   <% end %>
 

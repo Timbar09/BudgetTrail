@@ -1,31 +1,30 @@
 <% if !current_page?(root_path) %>
-  <nav class='nav'>
-    <ul class='nav_links'>
-      <li class='nav_link'>
+  <nav class='nav flex flex-column py-2 px-1'>
+    <div class='nav_links flex flex-jc-sb flex-ai-c'>
+      <div>
         <% if current_page?(categories_path) %>
-          <%= link_to destroy_user_session_path, data: { turbo_confirm: 'Are you sure?', turbo_method: :delete } do %>
-            <i class="material-icons">menu</i>
+          <%= link_to destroy_user_session_path, data: { turbo_confirm: 'Are you sure?', turbo_method: :delete }, class: 'nav_link' do %>
+            <i class="material-icons" title='Logout'>logout</i>
           <% end %>
         <% elsif current_page?(new_user_session_path) %>
-          <%= link_to root_path do %>
+          <%= link_to root_path, class: 'nav_link' do %>
             <i class="material-icons">west</i>
           <% end %>
         <% else %>
-          <%= link_to categories_path do %>
+          <%= link_to categories_path, class: 'nav_link' do %>
             <i class="material-icons">west</i>
           <% end %>
         <% end %>
-      </li>
+      </div>
 
-      <li>
-        <%= current_page_title %>
-      </li>
+      <h1 class='nav_title'><%= current_page_title %></h1>
+      </h1>
 
-      <li class='nav_link'>
-        <%= link_to '#' do %>
+      <div>
+        <%= link_to '#', class: 'nav_link' do %>
           <i class="material-icons">search</i>
         <% end %>
-      </li>
-    </ul>
+      </div>
+    </div>
   </nav>
 <% end %>
