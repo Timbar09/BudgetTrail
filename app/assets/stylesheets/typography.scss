@@ -20,6 +20,12 @@ ul {
   color: var(--very-light-grey);
 
   .flash {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.25rem;
+
     p {
       margin: 0;
       font-size: 0.8rem;

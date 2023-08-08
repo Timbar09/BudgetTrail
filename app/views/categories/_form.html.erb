@@ -1,13 +1,35 @@
-<%= form_with model: @category, local: true, class: 'form' do |form| %>
+<%= form_with model: @category, local: true, class: 'form pl-2' do |form| %>
   <div class="field">
-    <%= form.file_field :icon %>
+    <label for="category_icon" class="file-field-label flex flex-ai-c py-2 pr-2">
+      
+      <i class="profile-icon material-icons">account_circle</i>
+      
+      <%= form.file_field :icon, class: 'file-field', id: 'category_icon' %>
+
+      <span id="file-label" class="upload-text">Upload icon image</span>
+    </label>
   </div>
   
   <div class="field">
-    <%= form.text_field :name %>
+    <%= form.text_field :name, placeholder: 'Name ', required: true %>
   </div>
 
-  <div class="actions">
-    <%= form.submit 'Save', class: 'button button_save' %>
+  <div class="actions p-2">
+    <%= form.submit 'Save', class: 'btn btn_primary' %>
   </div>
 <% end %>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const fileInput = document.getElementById('category_icon');
+    const fileLabel = document.getElementById('file-label');
+
+    fileInput.addEventListener('change', () => {
+      if (fileInput.files.length > 0) {
+        fileLabel.textContent = fileInput.files[0].name;
+      } else {
+        fileLabel.textContent = 'Upload icon';
+      }
+    });
+  });
+</script>

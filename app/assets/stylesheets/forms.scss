@@ -1,0 +1,64 @@
+.form {
+  --focus: rgba(56, 120, 194, 0.1);
+
+  background-color: var(--white);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+  .field {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-top: solid 1px var(--light-grey);
+
+    &:focus-within {
+      input {
+        border: none;
+        background-color: var(--focus);
+      }
+    }
+
+    input[type='text'],
+    input[type='number'],
+    .input {
+      width: 100%;
+      padding: 1rem;
+      font-family: inherit;
+      outline: 0;
+      border: none;
+      transition: border-color 125ms ease-in-out;
+
+      &:valid {
+        background-color: rgba(96, 181, 36, 0.1);
+      }
+    }
+
+    input[type='checkbox'] {
+      margin-left: 1rem;
+    }
+
+    legend {
+      padding: 0;
+      margin: 0 0 0.5rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .file-field-label {
+      gap: 1rem;
+      text-align: left;
+      cursor: pointer;
+
+      .profile-icon {
+        font-size: 3rem;
+      }
+
+      .file-field {
+        display: none; /* Hide the original file input */
+      }
+
+      .upload-text {
+        flex: 1;
+      }
+    }
+  }
+}
