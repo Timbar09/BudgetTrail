@@ -28,6 +28,23 @@
     }
   }
 
+  &_new {
+    padding: 1rem 1rem;
+    width: 100%;
+    border: solid 1px var(--very-light-grey);
+
+    &:hover {
+      translate: 0 -0.25rem;
+      box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+      translate: 0 0;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+      background-color: rgb(51, 95, 19);
+    }
+  }
+
   &_tertiary {
     color: var(--dark-grey);
 

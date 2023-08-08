@@ -1,11 +1,11 @@
-<li>
-  <%= link_to category_expenses_path(category), class: 'category_card' do %>
+<li class='mb-2'>
+  <%= link_to category_expenses_path(category), class: 'category_card flex p-2' do %>
       <div class='category_card_icon'>
         <%= image_tag icon_fallback(category.icon), class: 'category_icon', width: 50, height: 50 %>
       </div>
 
       <div class='category_card_text'>
-        <div class='rigt'>
+        <div class='top flex flex-jc-sb flex-ai-c'>
           <span class='category_name'><%= category.name %></span>
           <span class='category_total'><%= number_to_currency(category.total_expenses) %></span>
         </div>

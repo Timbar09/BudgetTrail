@@ -12,6 +12,7 @@
     padding: 1.5rem;
   }
 
+  // Padding Left
   &l {
     &-1 {
       padding-left: 0.5rem;
@@ -26,6 +27,7 @@
     }
   }
 
+  // Padding Top
   &t {
     &-1 {
       padding-top: 0.5rem;
@@ -40,6 +42,7 @@
     }
   }
 
+  // Padding Right
   &r {
     &-1 {
       padding-right: 0.5rem;
@@ -54,6 +57,7 @@
     }
   }
 
+  // Padding Bottom
   &b {
     &-1 {
       padding-bottom: 0.5rem;
@@ -68,6 +72,7 @@
     }
   }
 
+  // Padding X
   &x {
     &-1 {
       padding-left: 0.5rem;
@@ -85,6 +90,7 @@
     }
   }
 
+  // Padding Y
   &y {
     &-1 {
       padding-top: 0.5rem;
@@ -117,6 +123,7 @@
     margin: 1.5rem;
   }
 
+  // Margin Left
   &l {
     &-1 {
       margin-left: 0.5rem;
@@ -131,6 +138,7 @@
     }
   }
 
+  // Margin Right
   &r {
     &-1 {
       margin-right: 0.5rem;
@@ -145,6 +153,37 @@
     }
   }
 
+  // Margin Top
+  &t {
+    &-1 {
+      margin-top: 0.5rem;
+    }
+
+    &-2 {
+      margin-top: 1rem;
+    }
+
+    &-3 {
+      margin-top: 1.5rem;
+    }
+  }
+
+  // Margin Bottom
+  &b {
+    &-1 {
+      margin-bottom: 0.5rem;
+    }
+
+    &-2 {
+      margin-bottom: 1rem;
+    }
+
+    &-3 {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  // Margin X
   &x {
     &-1 {
       margin-left: 0.5rem;
@@ -167,6 +206,7 @@
     }
   }
 
+  // Margin Y
   &y {
     &-1 {
       margin-top: 0.5rem;

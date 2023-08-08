@@ -7,7 +7,6 @@ h1,
 h2,
 h3 {
   margin: 0;
-  color: var(--dark);
 }
 
 ul {
@@ -16,21 +15,46 @@ ul {
   margin: 0;
 }
 
-.flash {
-  p {
-    margin: 0;
-    font-size: 0.8rem;
-  }
+.header {
+  position: relative;
+  color: var(--very-light-grey);
 
-  &_notice {
-    color: #00c851;
-  }
+  .flash {
+    p {
+      margin: 0;
+      font-size: 0.8rem;
+    }
 
-  &_alert {
-    color: #ff4444;
+    &_notice {
+      color: #00c851;
+    }
+
+    &_alert {
+      color: #ff4444;
+    }
+  }
+}
+
+.footer {
+  &_actions {
+    background-color: var(--green);
   }
 }
 
 .shadow {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.page_header {
+  background-color: var(--white);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+  &_title {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  &_total {
+    font-weight: 700;
+  }
 }
