@@ -1,0 +1,26 @@
+.nav {
+  color: var(--very-light-grey);
+  background-color: var(--blue);
+
+  &_title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  &_link {
+    display: grid;
+    place-items: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background-color 125ms ease-in-out;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    i {
+      font-size: 1.75rem;
+    }
+  }
+}
