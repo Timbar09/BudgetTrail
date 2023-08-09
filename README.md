@@ -27,6 +27,8 @@
 
 <br/>
 
+Watch the [video presentation](https://www.loom.com/share/4cfdf37316cb4e3798e803264738a5bb?sid=c7e5226b-dfda-45ab-9631-1ab903afa50d) of the project.
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
