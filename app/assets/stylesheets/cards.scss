@@ -6,11 +6,6 @@
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   transition: translate 125ms ease-in-out, box-shadow 125ms ease-in-out;
 
-  .top {
-    padding-bottom: 0.25rem;
-    border-bottom: solid 1px var(--light-grey);
-  }
-
   &:hover {
     translate: 0 -0.15rem;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
@@ -25,6 +20,11 @@
 
   &_text {
     flex: 1;
+
+    &_header {
+      padding-bottom: 0.35rem;
+      border-bottom: solid 1px var(--light-grey);
+    }
   }
 
   &_name {
@@ -36,8 +36,9 @@
   }
 
   &_date {
-    padding-top: 0.25rem;
-    font-size: 0.8rem;
+    display: inline-block;
+    padding-top: 0.35rem;
+    font-size: 0.75rem;
     color: var(--mid-grey);
   }
 }
