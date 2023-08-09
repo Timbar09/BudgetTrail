@@ -1,0 +1,13 @@
+<%= render 'shared/page_header', title: 'Categories', total: number_to_currency(@grand_total) %>
+
+<ul class='card_list p-2'>
+  <% if @categories.empty? %>
+    <li class='empty_text'>You don't have any categories yet.</li>
+  <% end %>
+
+  <% @categories.each do |category| %>
+    <%= render 'category_card', category: category %>
+  <% end %>
+</ul>
+
+<%= render 'shared/actions', path: new_category_path %>

@@ -1,0 +1,7 @@
+<div class='footer_actions splash_links px-2 py-3'>
+  <% if current_page?(categories_path) %>
+    <%= link_to 'Add a new category', path, class: 'btn btn_new' %>
+  <% else %>
+    <%= link_to 'Add a new transaction', path, class: 'btn btn_new' %>
+  <% end %>
+</div>

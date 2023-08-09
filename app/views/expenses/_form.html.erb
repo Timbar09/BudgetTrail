@@ -1,0 +1,19 @@
+<%= form_with model: @expense, url: category_expenses_path(@category), local: true, class: 'form' do |form| %>
+  <div class="field">
+    <%= form.text_field :name, autofocus: true, placeholder: 'Name ', required: true %>
+  </div>
+
+  <div class="field">
+    <%= form.number_field :amount, step: 0.01, placeholder: 'Amount', required: true %>
+  </div>
+
+  <fieldset class="field">
+    <legend>Select at least one category:</legend>
+
+    <%= form.collection_check_boxes :category_ids, Category.where(author_id: current_user.id), :id, :name %>
+  </fieldset>
+
+  <div class="actions mt-2 p-2">
+    <%= form.submit 'Save', class: 'btn btn_primary' %>
+  </div>
+<% end %>

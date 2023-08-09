@@ -1,0 +1,44 @@
+.card {
+  gap: 1rem;
+  border-radius: 0.25rem;
+  text-align: left;
+  background-color: var(--white);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  transition: translate 125ms ease-in-out, box-shadow 125ms ease-in-out;
+
+  &:hover {
+    translate: 0 -0.15rem;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  &_icon {
+    display: grid;
+    border: solid 1px var(--very-light-grey);
+    border-radius: 0.25rem;
+    overflow: hidden;
+  }
+
+  &_text {
+    flex: 1;
+
+    &_header {
+      padding-bottom: 0.35rem;
+      border-bottom: solid 1px var(--light-grey);
+    }
+  }
+
+  &_name {
+    font-weight: 500;
+  }
+
+  &_total {
+    font-weight: 700;
+  }
+
+  &_date {
+    display: inline-block;
+    padding-top: 0.35rem;
+    font-size: 0.75rem;
+    color: var(--mid-grey);
+  }
+}

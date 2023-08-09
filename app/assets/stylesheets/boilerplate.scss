@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500;700&family=Shrikhand&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --blue: rgb(56, 120, 194);
+  --green: rgb(96, 181, 36);
+  --dark: rgb(67, 76, 85);
+  --dark-grey: rgb(84, 92, 103);
+  --mid-grey: rgb(134, 137, 142);
+  --grey: rgb(152, 157, 163);
+  --light-grey: rgb(231, 231, 231);
+  --very-light-grey: rgb(250, 250, 250);
+  --white: rgb(255, 255, 255);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat Alternates', 'roboto', sans-serif;
+  background-color: var(--white);
+  color: var(--dark-grey);
+  min-width: 320px;
+}
+
+.app {
+  position: relative;
+  background-color: var(--very-light-grey);
+  min-height: 100vh;
+  max-width: 30em;
+  text-align: center;
+  border-left: solid 1px var(--light-grey);
+  border-right: solid 1px var(--light-grey);
+}
+
+.no_hover {
+  pointer-events: none;
+}

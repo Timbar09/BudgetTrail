@@ -1,0 +1,30 @@
+<% if !current_page?(root_path) %>
+  <nav class='nav flex flex-column pt-2 pb-3 px-1'>
+    <div class='nav_links flex flex-jc-sb flex-ai-c'>
+      <div>
+        <% if current_page?(categories_path) %>
+          <%= link_to destroy_user_session_path, data: { turbo_confirm: 'Are you sure?', turbo_method: :delete }, class: 'nav_link' do %>
+            <i class="material-icons" title='Logout'>logout</i>
+          <% end %>
+        <% elsif current_page?(new_user_session_path) %>
+          <%= link_to root_path, class: 'nav_link' do %>
+            <i class="material-icons">west</i>
+          <% end %>
+        <% else %>
+          <%= link_to categories_path, class: 'nav_link' do %>
+            <i class="material-icons">west</i>
+          <% end %>
+        <% end %>
+      </div>
+
+      <h1 class='nav_title'><%= current_page_title %></h1>
+      </h1>
+
+      <div>
+        <%= link_to '#', class: 'nav_link' do %>
+          <i class="material-icons">search</i>
+        <% end %>
+      </div>
+    </div>
+  </nav>
+<% end %>
