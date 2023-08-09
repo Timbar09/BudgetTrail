@@ -8,6 +8,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -68,6 +69,12 @@
 - **Categorized Spending Analysis**
 
 > The application provides a comprehensive view of the user's spending patterns by displaying the total amount spent in each category. This feature enables users to identify areas where they are allocating significant funds and make informed decisions to manage their budget effectively.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- See the app live, [here](https://budgettrail.onrender.com).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
