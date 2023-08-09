@@ -33,4 +33,4 @@ test:
 
 production:
   <<: *default
-  database: budget_trail_production
+  url: <%= ENV['DATABASE_URL'] %>
