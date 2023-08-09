@@ -15,7 +15,7 @@ class ExpensesController < ApplicationController
 
     if category_ids.nil? || category_ids.empty?
       redirect_to new_category_expense_path(@category), alert: 'Please select at least one category.' and
-      return
+        return
     end
 
     data = expense_params.except(:category_ids)
